@@ -6,5 +6,6 @@ app.Configure(config =>
 {
     config.SetApplicationName("aelf");
     config.AddCommand<SendCommand>("send");
+    config.AddCommand<GetBalanceCommand>("balance");
 });
 app.Run(args);
